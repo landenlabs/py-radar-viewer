@@ -70,7 +70,7 @@ from PyQt6.QtWidgets import (
 )
 
 APP_NAME = "Radar Viewer"
-VERSION = "v1.01.01"
+VERSION = "v6.11.20"
 ORG_NAME = "LanDenLabs"
 USER_AGENT = "qt-radar-viewer/%s (+https://landenlabs.com)" % VERSION.lstrip("v")
 
