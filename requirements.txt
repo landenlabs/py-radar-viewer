@@ -1,0 +1,4 @@
+# Runtime dependencies for radar-viewer.py
+PyQt6
+numpy
+h5py
