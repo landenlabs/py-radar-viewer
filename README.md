@@ -32,7 +32,14 @@ networks, drawn as PPI sweeps on a pan/zoom basemap:
 
 ## Screenshots
 
-_(coming soon)_
+**Main window**: the navigation panel (sites, product, elevation, scan time, display options)
+on the left, with a radar sweep drawn over the basemap.
+
+<img src="screens/viewer.png" width="800" alt="Radar Viewer main window">
+
+**About dialog**
+
+<img src="screens/about.png" width="276" alt="Radar Viewer About dialog">
 
 ---
 
@@ -139,6 +146,12 @@ The GitHub Action (`.github/workflows/build.yml`) runs when a `v*` tag is pushed
 macOS `.app` (zipped) and a Windows `.exe` with PyInstaller and publishes them as a
 GitHub Release. Use `set-version.bash` / `set-version.ps1` to bump the version.
 After changing `icon.png`, regenerate the icons with `python3 make-icons.py`.
+
+## Privacy
+
+Radar Viewer collects no personal data and has no telemetry. See the
+[Privacy Policy](https://landenlabs.github.io/py-radar-viewer/privacy.html)
+([source](docs/privacy.html)).
 
 ## License
 

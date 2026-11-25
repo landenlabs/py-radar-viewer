@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar Viewer - Privacy Policy - LanDen Labs</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 820px; margin: 2em auto; padding: 0 1em; line-height: 1.55; color: #222; background: #fff; }
+  h1 { margin-bottom: 0.2em; }
+  h2 { margin-top: 1.6em; border-bottom: 1px solid #ddd; padding-bottom: 0.2em; }
+  .meta { color: #666; margin-top: 0; }
+  table { border-collapse: collapse; width: 100%; margin: 0.8em 0; }
+  th, td { border: 1px solid #ccc; padding: 0.4em 0.6em; text-align: left; vertical-align: top; }
+  th { background: #f3f3f3; }
+  code { background: #f3f3f3; padding: 0 0.25em; border-radius: 3px; }
+  a { color: #0366d6; }
+  footer { margin-top: 3em; color: #666; font-size: 0.9em; border-top: 1px solid #ddd; padding-top: 1em; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ddd; background: #1e1e1e; }
+    th, code { background: #2d2d2d; }
+    th, td { border-color: #444; }
+    h2, footer { border-color: #444; }
+    a { color: #58a6ff; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Radar Viewer Privacy Policy</h1>
+<p class="meta">LanDen Labs &middot; Last updated: 25-Nov-2026</p>
+
+<h2>Summary</h2>
+<p>Radar Viewer is a desktop application that shows public weather radar data on a map.
+It does <strong>not</strong> collect, store, sell or share any personal information.
+There are no user accounts, no analytics, no telemetry, no advertising and no crash reporting.
+LanDen Labs runs no servers that the application talks to.</p>
+
+<h2>Information we collect</h2>
+<p>None. Radar Viewer does not send any information about you or your use of the
+application to LanDen Labs.</p>
+
+<h2>Network connections</h2>
+<p>To show radar data and maps, the application downloads files directly from these
+third-party public services:</p>
+<table>
+  <tr><th>Service</th><th>Purpose</th></tr>
+  <tr><td>EUMETNET Open Radar Data S3 cache (CloudFerro, ECMWF)</td><td>MeteoSwiss radar data</td></tr>
+  <tr><td>Unidata NEXRAD Level II bucket on Amazon Web Services (AWS)</td><td>NWS NEXRAD radar data</td></tr>
+  <tr><td>Esri ArcGIS Online, OpenStreetMap, OpenTopoMap, swisstopo</td><td>Basemap tiles, depending on the basemap you pick</td></tr>
+</table>
+<p>As with any web request, these services receive your IP address, a User-Agent string
+that names the application and its version (for example <code>qt-radar-viewer/1.01.01</code>),
+and the files requested. The map tiles requested reveal the area you are viewing. These
+services handle that information under their own privacy policies. LanDen Labs does not
+control them and receives none of this data. Choosing <em>None</em> as the basemap stops
+all tile requests.</p>
+
+<h2>Data stored on your computer</h2>
+<ul>
+  <li><strong>Preferences</strong>: window layout, selected radar site, product, elevation,
+      basemap, display options, and the last map position and zoom. They are saved with
+      Qt's standard settings storage (the macOS preferences folder, the Windows registry, or
+      a configuration file on Linux) so the application can restore them next time.</li>
+  <li><strong>Cache</strong>: downloaded radar files and map tiles are kept in the operating
+      system's cache folder to speed up later viewing. Radar files older than 2 days are
+      deleted automatically. The radar cache is capped at 2 GB and the tile cache at 200 MB.</li>
+  <li><strong>Files you save</strong>: PNG images or radar data files that you choose to save
+      go only to the location you pick.</li>
+</ul>
+<p>This data never leaves your computer. You can delete it at any time by removing the
+cache folder and the application's settings.</p>
+
+<h2>Local files</h2>
+<p>Files you open with <em>File &rarr; Open</em> or on the command line are read locally
+and are not uploaded anywhere.</p>
+
+<h2>Children's privacy</h2>
+<p>Radar Viewer collects no information from anyone, including children under 13.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted on this page with a new
+"Last updated" date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: visit <a href="https://landenlabs.com">landenlabs.com</a> or
+open an issue on <a href="https://github.com/landenlabs/py-radar-viewer/issues">GitHub</a>.</p>
+
+<footer>
+  &copy; 2026 LanDen Labs - Dennis Lang &middot;
+  <a href="https://github.com/landenlabs/py-radar-viewer">Radar Viewer on GitHub</a>
+</footer>
+
+</body>
+</html>
